@@ -1,0 +1,90 @@
+/* Plaats je CSS-code in dit bestand */
+
+header {
+    grid-area: header;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color:#fff5d7;
+}
+
+nav {
+    grid-area: nav;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #ffaaab;
+}
+
+main {
+    grid-area: main;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color:#ffaaab; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        'header header'
+        'nav main';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+button {
+    font-weight: bold;
+}
+
+.testscript {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.testscript th,
+.testscript td {
+    border: 1px solid #000000;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+}
+
+.testscript ul {
+    margin: 0;
+}
+
+.testscript li,
+.testscript span {
+    margin: 8px 0;
+}
+
+.testscript span {
+    display: block;
+    margin: 8px 0;
+}
+
+.documentation-link {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.button-q1{
+    display: block;
+    background-color:white ; 
+    border: 4px solid #FA605B;
+    outline: 0;
+
+}
+.button-q1:hover{
+    background-color:#FA605B; 
+    color: white;
+}
+.right{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}

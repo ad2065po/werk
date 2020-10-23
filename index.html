@@ -1,0 +1,58 @@
+<!-- In dit bestand staat de HTML-code voor je Quiz. Je kunt deze code aanpassen. -->
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frontend Development quiz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Welkom bij de quiz van Angela!</h1>
+        </header>
+        <nav>
+            <button id="button-start">Start</button>
+            <button id="button-questions">Vragen</button>
+        </nav>
+        <main>
+            <div class="page" id="page-start">
+                <h1>Speel de quiz en test je kennis over HTML, CSS en JavaScript!</h1>
+                <ul><li>De quiz heeft 10 vragen, voor elke vraag mag je zoveel tijd nemen als je wilt.</li>
+                    <li>Elke vraag heeft 4 mogelijke antwoorden. Je kan maar een antwoord selecteren.</li>
+                    <li>Een eenmaal gegeven antwoord mag achteraf niet worden gewijzigd.</li>
+                    <li>De quiz duurt gemiddeld 10 minuten.</li>
+                </ul>
+            </div>
+
+            <div class="page" id="page-questions">
+                <h2>Vragen</h2>
+                    <h2 id="vraag">1. Waar staat html voor?</h2>
+                    <button class="button-q1" id="button1"> Hypertext Markup Language</button><br>
+                    <button class="button-q1" id="button2"> Hypertool Markup Link</button><br>
+                    <button class="button-q1" id="button3"> Hypertext Mock Language</button><br>
+                    <button class="button-q1" id="button4"> Hypertext Markup Link</button><br>
+                    
+                    <button id="nextButton">Volgende</button>
+
+                    <p id="answer-text"></p>
+   
+                    <!-- <button id="answer-button" type="submit">Submit</button> -->
+            
+                </div>
+            <div class="page" id="einde"><h2>Dit is het einde van de quiz</h2></div>
+        </main>
+    </div>
+    <a class="documentation-link" href="documentation/">
+        Bekijk hier mijn documentatie
+    </a>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
